@@ -1,0 +1,245 @@
+.loading {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .product-card {
+    display: flex;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .product-image {
+    width: 25%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+  }
+  
+  .product-info {
+    width: 60%;
+    padding-left: 10px;
+  }
+  
+  .buy-button, .next-button {
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    padding: 7px;
+  }
+  
+  .price {
+    font-size: 22px;
+    margin-top: 100px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #DCDCDC;
+  }
+  
+  /*Page Men*/
+  .men-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    background-image: url("../Image/bg-pattern_men.jpg");
+    background-color: #D6E6FF;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .men-section h1, .men-section .price, .men-section .dollar-icon {
+    color: #002772;
+  }
+  
+  .men-section .buy-button, .men-section .next-button {
+    width: 220px;
+  }
+  
+  .men-section .buy-button {
+    background-color: #002772;
+  }
+  
+  .men-section .next-button {
+    background-color: transparent;
+    color: #002772;
+    border: 2px solid #002772;
+  }
+  
+  /*Page Women*/
+  .women-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    background-image: url("../Image/bg-pattern_women.jpg");
+    background-color: #FDE2FF;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .women-section h1, .women-section .dollar-icon, .price {
+    color: #720060;
+  }
+  
+  .women-section .buy-button, .women-section .next-button {
+    width: 220px;
+  }
+  
+  .women-section .buy-button {
+    background-color: #720060;
+  }
+  
+  .women-section .next-button {
+    background-color: transparent;
+    color: #720060;
+    border: 2px solid #720060;
+  }
+  
+  .women-section, .product-info, .category {
+    color: #1E1E1E;
+  }
+  
+  .women-section, .category {
+    color: #3F3F3F;
+  }
+  
+  /*Page Unavailable*/
+  .unavailable-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 65vh;
+  }
+  
+  .unavailable-section .product-card {
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-right: 70px;
+  }
+  
+  .unavailable-section {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  
+  .unavailable-section .product-card .unavailable-image {
+    width: 110%;
+    height: auto;
+    position: relative;
+    left: 40px;
+  }
+  
+  .unavailable-section .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+  
+  .unavailable-section .next-button {
+    background-color: transparent;
+    color: #3F3F3F;
+    border: 2px solid #000000;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 330px;
+    padding: 6px;
+    margin-bottom: 35px;
+    margin-right: 15px;
+  }
+  
+  /*Rating*/
+  .category {
+    font-size: 18px;
+    color: rgb(48, 47, 47);
+  }
+  
+  .category-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .rating-value {
+    margin-right: 5px;
+    font-size: 1.0em;
+    margin-top: 3px;
+  }
+  
+  .rating-icons {
+    display: flex;
+  }
+  
+  .rating-circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-left: 2px;
+    background-color: #ddd;
+  }
+  
+  .rating-circle.filled {
+    background-color: #002772;
+  }
+  
+  .rating-circle.women {
+    background-color: #720060;
+    width: 17px;
+    height: 17px;
+  }
+  
+
+    
